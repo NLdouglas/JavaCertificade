@@ -10,5 +10,7 @@ public class testes {
         result ++ ;
 
         System.out.println(result);
+
+        // learning about if/else, ternary and switch case   
     }
 }
