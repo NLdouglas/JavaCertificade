@@ -2,22 +2,28 @@ package Duke.Choice;
 
 public class testes {
     public static void main (String [] args ){
-        double price = 1.99;
-        double discount = 0;
-        String condition = "Used";
 
-        switch (condition) {
-            case "Damage":
-                price = price*0.1;
+        int measurement = 2;
+
+
+        Customer c1 = new Customer();
+        c1.name = "Pink";
+        c1.size = "S";
+
+        switch (measurement) {
+            case 1:
+                c1.size = "S";
                 break;
-            case "Used":
-                price = price*0.2;
+            case 2:
+                c1.size = "M";
                 break;
-            default:
-                price = price;
+            case 3:
+                c1.size = "S";
+                break;
+
         }
 
-        System.out.println(price);
+        System.out.println(c1.size);
 
         // learning about if/else, ternary and switch case   
     }
