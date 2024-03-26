@@ -3,28 +3,22 @@ package Duke.Choice;
 public class testes {
     public static void main (String [] args ){
 
-        int measurement = 2;
+        int [] ages1 = new int [3];
+        ages1[0] = 19;
+        ages1[1] = 15;
+        ages1[2] = 14;
+        ages1[3] = 54; // out of bounds 
 
 
-        Customer c1 = new Customer();
-        c1.name = "Pink";
-        c1.size = "S";
+        System.out.println(ages1);
 
-        switch (measurement) {
-            case 1:
-                c1.size = "S";
-                break;
-            case 2:
-                c1.size = "M";
-                break;
-            case 3:
-                c1.size = "S";
-                break;
+
+
 
         }
 
-        System.out.println(c1.size);
 
-        // learning about if/else, ternary and switch case   
+
+        // arrays
     }
-}
+
