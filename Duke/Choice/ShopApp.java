@@ -13,12 +13,18 @@ public class ShopApp {
         Customer c1 = new Customer();
         c1.name = "Pink";
         c1.size = "S";
+
+
         
         Clothing item1 = new Clothing();
         Clothing item2 = new Clothing();
         item1.description = "Blue Jacket";
+        Clothing [] items = {item1, item2} ;
+
         item1.price = 20.9;
         item1.size = "M";
+
+
 
         //other way do call size
         //item1.size = "M"
