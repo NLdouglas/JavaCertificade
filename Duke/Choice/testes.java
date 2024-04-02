@@ -7,7 +7,7 @@ public class testes {
         ages1[0] = 19;
         ages1[1] = 15;
         ages1[2] = 14;
-        ages1[3] = 54; // out of bounds 
+
 
 
         System.out.println(ages1);
