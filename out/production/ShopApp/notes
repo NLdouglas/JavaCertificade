@@ -22,3 +22,37 @@ Example:
                     }
 
 
+FOR EACH:
+        public class SomaArrayForEach {
+            public static void main(String[] args) {
+                // Definindo um array de números inteiros
+                int[] numeros = {1, 2, 3, 4, 5};
+
+                // Variável para armazenar a soma dos elementos do array
+                int soma = 0;
+
+                // Iterando sobre os elementos do array usando for-each para calcular a soma
+                for (int numero : numeros) {
+                    soma += numero;
+                }
+
+                // Imprimindo a soma
+                System.out.println("A soma dos elementos do array é: " + soma);
+            }
+        }
+
+
+Definindo classes e Creando objetos:
+
+class Customer {             Class
+------------------------------------------------------
+    String name;                Field Definition
+    String size = "S";
+-----------------------------------------------------
+    void setSize (String newSize){
+        size = newSize;
+    }                              Method definition
+    String getSize(){
+        return size;
+    }
+}

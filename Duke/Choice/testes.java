@@ -1,20 +1,21 @@
 package Duke.Choice;
 
 
-
-    class Customers {
-
-        String name;               // Field Definition
-        String size = "S";
-
-        void setSize(String newSize) {
-            size = newSize;
-        }                              //Method definition
-
-        String getSize() {
-            return size;
+public class testes {
+    public void printWishList () {
+        String[] list = {"lalal", "lala2"};
+        
+        for (String idea: list) {
+            System.out.println(idea);
         }
     }
+
+    public double getTotal (double price, int quantity) {
+        double total = price*quantity;//tax;
+        return total;
+    }
+
+}
 
 
 

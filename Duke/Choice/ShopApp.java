@@ -38,7 +38,7 @@ public class ShopApp {
 
         System.out.println("Customer is " + c1.name);
 //        for (Clothing itens: items){
-//            System.out.println("Clothing " + itens.description + ", price is " + itens.price + ", and the size is " + itens.size);
+//            System. out.println("Clothing " + itens.description + ", price is " + itens.price + ", and the size is " + itens.size);
 //
 //        }
 
