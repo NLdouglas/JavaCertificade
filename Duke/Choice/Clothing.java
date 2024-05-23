@@ -4,7 +4,8 @@ public class Clothing {
     String description;
     double price;
     String size = "M";
-    final minimumPrice
+    private final double MIN_PRICE = 10;
+    private final double MIN_TAX = 0.2;
 
     public String getDescription() {
         return description;
@@ -15,11 +16,11 @@ public class Clothing {
     }
 
     public double getPrice() {
-        return price;
+        return price + (price * MIN_TAX);
     }
 
     public void setPrice(double price) {
-        this.price = price;
+        this.price = (price > MIN_PRICE) ? price : MIN_PRICE;
     }
 
     public String getSize() {
