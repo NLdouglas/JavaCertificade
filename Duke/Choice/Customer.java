@@ -1,8 +1,13 @@
 package Duke.Choice;
 
 public class Customer {
-    String name;
-    String size = "S";
+    public String getSize() {
+        return size;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
+    }
 
     public String getName() {
         return name;
@@ -12,11 +17,7 @@ public class Customer {
         this.name = name;
     }
 
-    public String getSize() {
-        return size;
-    }
+    String name;
+    String size = "S";
 
-    public void setSize(String size) {
-        this.size = size;
-    }
-}
+ }
