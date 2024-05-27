@@ -3,6 +3,30 @@ package Duke.Choice;
 public class Customer {
     String name;
     String size = "S";
+    private Clothing[] items ;
+
+    public void addItems ( Clothing[] someItems){ // addItems recebe void pois n tem um tipo (double, int, String...) declarado,
+        items = someItems;
+    }
+    public Clothing[] getItems(){
+        return items;
+    }
+
+    public double getTotalClothingCost(){
+        for (Clothing itens: items ){
+            if (c1.getSize().equals(itens.getSize())) {
+                total += itens.getPrice();
+                System.out.println("Clothing " + itens.getDescription() + ", price is " + itens.getPrice() + ", and the size is " + itens.getSize());
+                total = total + total * tax;
+                if (total > 15){ break;}
+
+            }
+
+        }
+
+        return total;
+
+    }
 
     public String getSize() {
         return size;

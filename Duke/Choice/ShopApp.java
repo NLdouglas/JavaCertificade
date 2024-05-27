@@ -41,17 +41,13 @@ public class ShopApp {
         System.out.println("Customer is " + c1.name + "," + c1.getSize() );
 
         for (Clothing itens: items ){
-            if (c1.getSize().equals(itens.getSize())) {
-                total += itens.getPrice();
-                System.out.println("Clothing " + itens.getDescription() + ", price is " + itens.getPrice() + ", and the size is " + itens.getSize());
-                total = total + total * tax;
-                if (total > 15){ break;}
+            System.out.println("Clothing " + itens.getDescription() + ", price is " + itens.getPrice() + ", and the size is " + itens.getSize());
+
 
             }
 
         }
-        System.out.println("Total = " + total);
 
     }
 
-}
+
