@@ -13,19 +13,12 @@ public class Customer {
     }
 
     public double getTotalClothingCost(){
+        double total = 0.0;
         for (Clothing itens: items ){
-            if (c1.getSize().equals(itens.getSize())) {
-                total += itens.getPrice();
-                System.out.println("Clothing " + itens.getDescription() + ", price is " + itens.getPrice() + ", and the size is " + itens.getSize());
-                total = total + total * tax;
-                if (total > 15){ break;}
+            total += itens.getPrice();
 
             }
-
-        }
-
         return total;
-
     }
 
     public String getSize() {

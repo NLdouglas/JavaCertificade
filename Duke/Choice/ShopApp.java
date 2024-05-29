@@ -21,7 +21,7 @@ public class ShopApp {
         item1.setPrice(20.9);
         item1.setSize("M");
 
-        item2.setDescription("Blue Jacket");
+        item2.setDescription("Orange T-shirt");
         item2.setPrice(10.5);
         item2.setSize("S");
 
@@ -36,18 +36,14 @@ public class ShopApp {
         items[3].setSize("S");
 
         int measurement = 8;
+        c1.addItems(items);
         c1.setSize(measurement);
 
-        System.out.println("Customer is " + c1.name + "," + c1.getSize() );
-
-        for (Clothing itens: items ){
-            System.out.println("Clothing " + itens.getDescription() + ", price is " + itens.getPrice() + ", and the size is " + itens.getSize());
-
+        for (Clothing itens: c1.getItems() ){
+            System.out.println("Customer is " + c1.name + "," + c1.getSize() + "," + c1.getTotalClothingCost());
 
             }
-
         }
-
     }
 
 
